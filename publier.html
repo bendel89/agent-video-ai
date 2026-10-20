@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publier sur TikTok - AgentVideoAI</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0; padding: 20px; color: #333; }
+        .container { max-width: 500px; margin: 0 auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+        h1 { text-align: center; color: #000; }
+        .preview { text-align: center; margin-bottom: 20px; }
+        .preview img { max-width: 100%; height: auto; border-radius: 8px; border: 1px solid #ddd; }
+        .form-group { margin-bottom: 20px; }
+        label { display: block; font-weight: bold; margin-bottom: 5px; }
+        select, input[type="text"] { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; font-size: 16px; box-sizing: border-box; }
+        .checkbox-group { display: flex; flex-direction: column; gap: 10px; margin-top: 10px; }
+        .checkbox-item { display: flex; align-items: center; gap: 10px; }
+        .btn-submit { width: 100%; padding: 15px; background-color: #ff0050; color: white; border: none; border-radius: 5px; font-size: 18px; font-weight: bold; cursor: pointer; margin-top: 20px; }
+        .btn-submit:hover { background-color: #d10041; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Publier sur TikTok</h1>
+        
+        <div class="preview">
+            <img src="https://via.placeholder.com/300x533/000000/FFFFFF?text=Apercu+Video" alt="Aperçu de la vidéo">
+            <p><em>Vidéo générée : video_35_final.mp4</em></p>
+        </div>
+
+        <div class="form-group">
+            <label for="titre">Titre de la vidéo</label>
+            <input type="text" id="titre" value="Découvrez la Suisse autrement 🇨🇭" placeholder="Ajoutez un titre...">
+        </div>
+
+        <div class="form-group">
+            <label for="visibilite">Qui peut voir cette vidéo ?</label>
+            <select id="visibilite" required>
+                <option value="" disabled selected>Sélectionnez une option</option>
+                <option value="public">Tout le monde</option>
+                <option value="amis">Amis</option>
+                <option value="prive">Privé (Moi uniquement)</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Autoriser les interactions :</label>
+            <div class="checkbox-group">
+                <div class="checkbox-item">
+                    <input type="checkbox" id="commentaires">
+                    <label for="commentaires" style="font-weight: normal;">Autoriser les commentaires</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="duos">
+                    <label for="duos" style="font-weight: normal;">Autoriser les duos</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="stitch">
+                    <label for="stitch" style="font-weight: normal;">Autoriser le stitch</label>
+                </div>
+            </div>
+        </div>
+
+        <button class="btn-submit" onclick="alert('Simulation : La vidéo serait publiée avec les options sélectionnées.')">Publier sur TikTok</button>
+    </div>
+</body>
+</html>
